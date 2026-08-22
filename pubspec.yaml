@@ -46,6 +46,19 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
 
+  # Step 1: Install icon app
+  flutter_launcher_icons: "^0.14.4"
+
+# Step 1: Install icon app
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true # ไอคอนบน ios เป็นแนวตั้ง
+  Remove_alpha.ios: true #  icon โปร่งใสบน ios
+  image_path: "android/assets/icon/logo.png"
+  adaptive_icon_background: "#FFFFFF" # สีพื้นหลัง icon บน android
+  adaptive_icon_foreground: "android/assets/icon/logo.png" # ให้ iconเป็นรูปภาพ
+  # หลังจากนำภาพเข้าโปรเจคแล้ว ให้ใช้คำสั่ง  dart run flutter_launcher_icons
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
